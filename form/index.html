@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Форма обратной связи</title>
+    <!-- scripts for styles -->
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script src="https://use.fontawesome.com/948142a9de.js"></script>
+
+    <!-- links for styles -->
+    <link rel="stylesheet" href="css/style.css">
+     <script  src="js/slick/slick.min.js"></script>
+     <link rel="stylesheet" href="js/slick/slick-theme.css"/>
+     <link rel="stylesheet" href="js/slick/slick.css"/>
+
+     </script>
+</head>
+<body>
+    <div class="title">
+        <h1>регистрация</h1>
+    </div>
+    <form action="#">
+        <div class="form-container">
+                <div class="step">
+                    <header>
+                        <h2>Шаг 1 <span>(как вас зовут)</span></h2>
+                    </header>
+                    <div class="container">
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input class="field" id="email" type="text" placeholder="Email" required pattern="\S+@[a-z]+.[a-z]+">
+                        </div>
+                        <div class="input-group">
+                            <label for="lastname">Имя</label>
+                            <input class="field" id="lastname" type="text" placeholder="Имя">
+                        </div>
+                    </div>
+                    <footer>
+                        <a data-action="next" class="btn pull-right">Следующий</a>
+                    </footer>
+                </div>
+                <div class="step">
+                    <header>
+                        <h2>Шаг 2 <span>(геопозиция)</span></h2>
+                    </header>
+                    <div class="container">
+                        <div class="input-group">
+                            <label for="email">Email</label>
+                            <input class="field" id="name" type="text" placeholder="Имя">
+                        </div>
+                        <div class="input-group">
+                            <label for="lastname">Имя</label>
+                            <input class="field" id="lastname" type="text" placeholder="Имя" autofocus required>
+                        </div>
+                    </div>
+                    <footer>
+                        <a data-action="prev" class="btn">Назад</a>
+                        <a data-action="next" class="btn pull-right">Следующий</a>
+                    </footer>
+                </div>
+                <div class="step">
+                    <header>
+                        <h2>Шаг 3 <span>(контактные данные)</span></h2>
+                    </header>
+                    <div class="container">
+                        <div class="input-group">
+                            <label for="name">Email</label>
+                            <input class="field" id="name" type="text" placeholder="Имя" autofocus required>
+                        </div>
+                        <div class="input-group">
+                            <label for="lastname">Имя</label>
+                            <input class="field" id="lastname" type="text" placeholder="Имя" autofocus required>
+                        </div>
+                    </div>
+                    <footer>
+                        <a data-action="prev" class="btn ">Назад</a>
+                        <button class="btn pull-right" data-registration="">Зарегистрироваться</button>
+                    </footer>
+                </div>
+            </div>
+    </form>
+    <!-- main scripts here -->
+  <script src="js/main.js"></script>
+</body>
+</html>
